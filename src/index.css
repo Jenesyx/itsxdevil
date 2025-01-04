@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Cascadia Code';
+  src: url('https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@master/patched-fonts/CascadiaCode/Regular/CascadiaCode-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Cascadia Code', monospace;
+  color: #000000;
+  width: 100dvw;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #E7E7E7;
+  user-select: none;
+}

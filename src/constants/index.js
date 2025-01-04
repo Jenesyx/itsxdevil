@@ -1,0 +1,1 @@
+import torigateVideo from './torigateVideo';
