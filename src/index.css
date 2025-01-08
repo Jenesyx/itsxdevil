@@ -25,3 +25,35 @@ body {
   background-color: #E7E7E7;
   user-select: none;
 }
+
+.page-container {
+  display: flex;
+  width: 400vw; /* 100vw for each of the 4 sections */
+  height: 100vh; /* Full viewport height */
+}
+
+.custom-button {
+  @apply text-black px-4 py-2 relative overflow-hidden transition-all;
+  background-color: transparent;
+  border: 2px solid black;
+  clip-path: polygon(73% 0, 100% 36%, 100% 100%, 0 100%, 0 0);
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-button:hover {
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+
+.custom-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(73% 0, 100% 36%, 100% 100%, 0 100%, 0 0);
+  border: 2px solid black; /* Ensure border matches button */
+  pointer-events: none;
+}
